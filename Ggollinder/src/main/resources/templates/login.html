@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ggollinder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="/_css/login.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Ggollinder
+  </div>
+  <div class="w3-display-middle">
+      <div class="container">
+          <div class="menu">
+            <a href="#connexion" class="btn-connexion"><h2>SIGN IN</h2></a>
+            <a href="#enregistrer" class="btn-enregistrer active"><h2>SIGN UP</h2></a>
+          </div>
+          <div class="connexion">
+            <div class="contact-form">
+              <label>USERNAME</label>
+              <input placeholder="" type="text">
+              
+              <label>PASSWORD</label>
+              <input placeholder="" type="text">
+              
+              <div class="check">
+                <label>				
+                  <input id="check" type="checkbox" class="checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="23px">
+                      <path class="path-back"  d="M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                      <path class="path-moving" d="M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                    </svg>
+                </label>
+                <h3>Keep me signed in</h3>
+              </div>
+              <input class="submit" value="SIGN IN" type="submit">
+            </div>
+            <hr>
+            <a href="https://www.grandvincent-marion.fr/" target="_blank"><h4>Forgot password?</h4></a>
+          </div>
+          <div class="enregistrer active-section">
+            <div class="contact-form">
+              <label>USERNAME</label>
+              <input placeholder="" type="text">
+              
+              <label>E-MAIL</label>
+              <input placeholder="" type="text">	
+              
+              <label>PASSWORD</label>
+              <input placeholder="" type="text">
+              
+              <label>CONFIRM PASSWORD</label>
+              <input placeholder="" type="text">
+              
+              <div class="check">
+                <label>				
+                  <input id="check" type="checkbox" class="checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="23px">
+                      <path class="path-back"  d="M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                      <path class="path-moving" d="M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                    </svg>
+                </label>
+                <h3>I agree</h3>
+              </div>
+              <input class="submit" value="SIGN UP" type="submit">	
+            </div>
+          </div>
+      </div>
+
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+  
+</div>
+
+<script>
+  $('.btn-enregistrer').on("click", function() {
+    $('.connexion').addClass('remove-section');
+    $('.enregistrer').removeClass('active-section');
+    $('.btn-enregistrer').removeClass('active');
+    $('.btn-connexion').addClass('active');
+  });
+
+  $('.btn-connexion').on("click", function() {
+    $('.connexion').removeClass('remove-section');
+    $('.enregistrer').addClass('active-section');	
+    $('.btn-enregistrer').addClass('active');
+    $('.btn-connexion').removeClass('active');
+  });
+</script>
+</body>
+</html>
