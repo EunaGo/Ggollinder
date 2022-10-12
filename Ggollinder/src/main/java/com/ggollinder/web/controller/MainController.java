@@ -17,11 +17,6 @@ public class MainController {
 	@Autowired
 	UserRepository userRepository;
 	
-	@RequestMapping("/login")
-	public String login(Model model) {
-		return "login";
-	}
-
 	@RequestMapping("/main")
 	public String main(Model model) {
 		
